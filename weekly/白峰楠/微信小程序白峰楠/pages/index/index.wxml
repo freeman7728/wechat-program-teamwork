@@ -1,0 +1,27 @@
+
+<scroll-view scroll-x>
+<view class="out">
+  <view class="in" >热点</view>
+  <view class="in" bind:tap="top">要闻</view>
+  <view class="in">政情</view>
+  <view class="in">经济</view>
+  <view class="in">区情</view>
+  <view class="in">观点</view>  
+  <view class="in">视频</view>
+  <view class="in">军事</view>
+  </view>
+</scroll-view>
+<swiper class="swap" indicator-dots autoplay interval ="3000" circular >
+  <view class="all" wx:for="{{resData}}" wx:key="index">
+  <swiper-item>
+  <view class="bid">
+  <image class="scr" src="{{item.picurl}}" mode="widthFix" />
+    </view>
+    <view>标题：</view>
+  <view>{{item.title}}</view>
+
+
+  </swiper-item>
+  </view>
+</swiper>
+
