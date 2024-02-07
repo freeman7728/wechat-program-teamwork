@@ -17,8 +17,8 @@
   <view class="bid">
   <image class="scr" src="{{item.picurl}}" mode="widthFix" />
     </view>
-    <view>标题：</view>
-  <view>{{item.title}}</view>
+    <view class="ade">标题：</view>
+  <view class="ad">{{item.title}}</view>
 
 
   </swiper-item>
